@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterzuela/features/big_applications/big_applications.dart';
+import 'package:flutterzuela/features/venezuela/venezuela.dart';
 
 class FlutterPresentations extends StatelessWidget {
   const FlutterPresentations({Key key}) : super(key: key);
@@ -22,8 +22,8 @@ class _PresentationList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: const BigApplications(),
+    return const Scaffold(
+      body: Venezuela(),
     );
   }
 }
