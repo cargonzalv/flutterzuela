@@ -15194,7 +15194,7 @@ s.toString
 r=window.location.search
 r.toString
 r=s+r
-s=r}else s=""
+s=r}else s="#"+a
 return s},
 qm:function(){var s={},r=new P.U($.Q,t.U)
 s.a=null
