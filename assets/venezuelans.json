@@ -32,6 +32,14 @@
             "profession": "Político",
             "url": "assets/venezuelans/andres-bello.jpg",
             "description": "Profesor del libertador"
+        },
+        {
+            "id": "amigos-invisibles",
+            "name": "Los Amigos Invisibles",
+            "fullname": "Los Amigos Invisibles",
+            "profession": "Conjunto musical",
+            "url": "assets/venezuelans/amigos-invisibles.jpg",
+            "description": "Banda venezolana formada en 1991, nominada en múltiples oportunidades al premio Grammy, y que cuenta además con un Grammy Latino cuya música mezcla elementos del disco, el acid jazz y el funk con diversos ritmos hispanos."
         }
     ]
 }
