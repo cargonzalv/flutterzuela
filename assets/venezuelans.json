@@ -15,7 +15,7 @@
             "profession": "Político",
             "url": "assets/venezuelans/hugo-chavez.jpg",
             "description": "El mamaguevo mayor",
-            "videos": ["https://www.youtube.com/watch?v=pkzSG1nGDAM", "https://www.youtube.com/watch?v=grC6nXHm2iE"]
+            "videos": ["https://www.youtube.com/watch?v=QVRCAx6PGso", "https://www.youtube.com/watch?v=pkzSG1nGDAM", "https://www.youtube.com/watch?v=grC6nXHm2iE"]
         },
         {
             "id": "nicolas-maduro",
@@ -40,6 +40,23 @@
             "profession": "Conjunto musical",
             "url": "assets/venezuelans/amigos-invisibles.jpg",
             "description": "Banda venezolana formada en 1991, nominada en múltiples oportunidades al premio Grammy, y que cuenta además con un Grammy Latino cuya música mezcla elementos del disco, el acid jazz y el funk con diversos ritmos hispanos."
+        },
+        {
+            "id": "canserbero",
+            "name": "Canserbero",
+            "fullname": "Tirone José González Orama",
+            "profession": "Rapero, compositor y activista social",
+            "url": "assets/venezuelans/canserbero.jpg",
+            "description": "El 20 de enero de 2015, Canserbero fue hallado muerto en el apartamento donde estaba residenciado. Existen varias hipótesis acerca de su muerte."
+        },
+        {
+            "id": "chino-y-nacho",
+            "name": "Chino y Nacho",
+            "fullname": "Jesús Alberto Miranda Pérez (Chino) y Miguel Ignacio Mendoza Donatti (Nacho)",
+            "profession": "Venezuelan pop duo",
+            "url": "assets/venezuelans/chino-y-nacho.jpg",
+            "description": "Dúo venezolano de pop latino, merengue y reguetón."
         }
+        
     ]
 }
