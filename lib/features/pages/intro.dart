@@ -24,7 +24,7 @@ class TitlePage extends StatelessWidget {
                     child: Row(
                       children: const [
                         Image(
-                          image: AssetImage('assets/image4.png'),
+                          image: AssetImage('assets/flutter.png'),
                           height: 60,
                         ),
                         Text('lutter'),
@@ -48,12 +48,12 @@ class TitlePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: const [
                     Text(
-                      'Tomek Polański',
+                      'CharliE González',
                       style: TextStyle(color: Colors.black),
                     ),
                     Text(
-                      'GROUPON',
-                      style: TextStyle(color: Colors.green),
+                      'Leal',
+                      style: TextStyle(color: Color(0xfffdd430)),
                     ),
                   ],
                 ),

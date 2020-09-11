@@ -32,9 +32,9 @@ class ThankYouPage extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: const [
-                  Text('Tomek Polański'),
+                  Text('Carlos Eduardo González'),
                   SizedBox(height: 5),
-                  Text('@tpolansk'),
+                  Text('@CarlosGA96'),
                 ],
               ),
             ),

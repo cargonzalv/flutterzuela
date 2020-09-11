@@ -160,8 +160,8 @@ class _ThatsAllState extends State<ThatsAll> with TickerProviderStateMixin {
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: const [
-                      Text('Tomek Polanski'),
-                      Text('@tpolansk'),
+                      Text('Carlos Eduardo González'),
+                      Text('@CarlosGA96'),
                     ],
                   ),
                 ),

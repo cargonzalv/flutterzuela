@@ -39,7 +39,7 @@ class _Title extends StatelessWidget {
         children: <InlineSpan>[
           WidgetSpan(
             child: Image.asset(
-              'assets/image4.png',
+              'assets/flutter.png',
               height: 130,
             ),
           ),
