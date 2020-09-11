@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterzuela/features/venezuela/pages/big_intro.dart';
+import 'package:flutterzuela/features/pages/big_intro.dart';
 
 class Detalle extends StatelessWidget {
   const Detalle({Key key, this.photo, this.onTap, this.size, this.tag})

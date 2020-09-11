@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterzuela/features/convincing_for_flutter/shared/groupon_theme.dart';
+import 'package:flutterzuela/features/pages/groupon_theme.dart';
 import 'package:presentation/effects.dart';
 import 'package:presentation/presentation.dart';
 
@@ -48,12 +48,12 @@ class TitlePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: const [
                     Text(
-                      'CharliE González',
+                      'Tomek Polański',
                       style: TextStyle(color: Colors.black),
                     ),
                     Text(
-                      'Leal',
-                      style: TextStyle(color: Color(0xfffdd430)),
+                      'GROUPON',
+                      style: TextStyle(color: Colors.green),
                     ),
                   ],
                 ),

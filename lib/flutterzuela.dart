@@ -1,6 +1,5 @@
-import 'dart:html' as html;
 import 'package:flutter/material.dart';
-import 'package:flutterzuela/features/venezuela/venezuela.dart';
+import 'package:flutterzuela/features/venezuela.dart';
 
 class FlutterPresentations extends StatefulWidget {
   const FlutterPresentations({Key key}) : super(key: key);

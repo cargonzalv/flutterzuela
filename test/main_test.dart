@@ -1,6 +1,6 @@
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutterzuela/features/code_reuse/pages/thats_all.dart';
+import 'package:flutterzuela/features/pages/thats_all.dart';
 import 'package:flutterzuela/flutterzuela.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:presentation/presentation.dart';

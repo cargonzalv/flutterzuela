@@ -1,12 +1,10 @@
-import 'dart:convert';
 import 'dart:math' as math;
 import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter/services.dart';
-import 'package:flutterzuela/features/convincing_for_flutter/shared/groupon_theme.dart';
-import 'package:flutterzuela/features/venezuela/pages/detalle.dart';
+import 'package:flutterzuela/features/pages/detalle.dart';
+import 'package:flutterzuela/features/pages/groupon_theme.dart';
 import 'package:flutterzuela/shared/utils.dart';
 import 'package:flutterzuela/shared/venezuelan.dart';
 import 'package:presentation/presentation.dart';
