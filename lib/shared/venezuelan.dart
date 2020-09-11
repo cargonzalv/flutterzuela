@@ -6,10 +6,11 @@ class Venezuelan {
   Venezuelan({
     @required this.id,
     @required this.name,
+    @required this.fullname,
     @required this.profession,
     @required this.url,
     @required this.description,
-    @required this.nickname,
+    this.videos,
     this.media,
   });
 
@@ -17,10 +18,12 @@ class Venezuelan {
     final venezuelan = Venezuelan(
       id: json['id'],
       name: json['name'],
+      fullname: json['fullname'],
       url: json['url'],
       description: json['description'],
       profession: json['profession'],
-      nickname: json['nickname'],
+      videos:
+          json['videos'] != null ? List<String>.from(json['videos']) ?? [] : [],
     );
     return venezuelan;
   }
@@ -43,5 +46,7 @@ class Venezuelan {
   String description;
   String profession;
   String nickname;
+  String fullname;
   List<String> media;
+  List<String> videos;
 }

@@ -64,7 +64,7 @@ class _ThatsAllState extends State<ThatsAll> with TickerProviderStateMixin {
     )..addListener(() => setState(() {}));
     _fadeInController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 10),
+      duration: const Duration(seconds: 5),
     )..addStatusListener((status) {
         if (status == AnimationStatus.completed) {
           setState(() => _showQuestions = true);

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterzuela/features/pages/big_intro.dart';
 import 'package:flutterzuela/features/pages/intro.dart';
-import 'package:flutterzuela/features/pages/summary.dart';
+import 'package:flutterzuela/features/pages/thats_all.dart';
 
 import 'package:flutterzuela/shared/themes.dart';
 import 'package:presentation/presentation.dart';
@@ -45,9 +45,9 @@ class VenezuelaState extends State<Venezuela> {
           controller: controller,
           presentationController: presentationController,
           children: [
-            const TitlePage(),
+            // const TitlePage(),
             const BigIntro(),
-            const ThankYouPage(),
+            const ThatsAll(thanks: 'Arigatou!')
           ],
         ),
       ),

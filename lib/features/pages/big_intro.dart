@@ -90,7 +90,10 @@ class __FlutterProjectsState extends State<_FlutterProjects>
   }
 
   Future<List<Venezuelan>> loadVenezuelans() async {
-    final response = await loadAsset('assets/venezuelans.json');
+    // final path =
+    // 'https://raw.githubusercontent.com/cargonzalv/flutterzuela/master/assets/venezuelans.json?v=3';
+    final path = 'assets/venezuelans.json';
+    final response = await loadAsset(path);
     final List<Venezuelan> venezuelans = [];
     final promises = response['data'].map(
       (v) async {
@@ -134,15 +137,15 @@ class __FlutterProjectsState extends State<_FlutterProjects>
           fit: StackFit.expand,
           children: _circles
                   ?.map((i) => Positioned(
-                        left: c.maxWidth * i.x,
-                        top: c.maxHeight * i.y,
+                        left: (c.maxWidth - i.size) * i.x,
+                        top: (c.maxHeight - i.size) * i.y,
                         child: LoopTransition(
                           seed: math.Random().nextDouble(),
                           scale: _controller,
                           radius: 400 / i.size,
                           child: _Bubble(
                             size: i.size,
-                            url: _venezuelans[_circles.indexOf(i)].url,
+                            person: _venezuelans[_circles.indexOf(i)],
                           ),
                         ),
                       ))
@@ -207,23 +210,23 @@ class _Bubble extends StatelessWidget {
     Key key,
     this.size = 30,
     this.color = Colors.orange,
-    this.url = '',
+    this.person = null,
   }) : super(key: key);
 
   final double size;
   final Color color;
-  final String url;
+  final Venezuelan person;
 
   @override
   Widget build(BuildContext context) {
     return PhotoHero(
-      photo: url,
+      photo: person.url,
       size: size,
-      tag: '$url-$size',
+      tag: '$person.url-$size',
       onTap: () {
         Navigator.of(context).push(
           PageRouteBuilder<Detalle>(
-            transitionDuration: const Duration(seconds: 1),
+            transitionDuration: const Duration(milliseconds: 500),
             opaque: false,
             barrierDismissible: true,
             pageBuilder: (BuildContext context, _, __) {
@@ -231,9 +234,9 @@ class _Bubble extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context).pop();
                 },
-                photo: url,
-                size: 50,
-                tag: '$url-$size',
+                person: person,
+                size: 100,
+                tag: '$person.url-$size',
               );
             },
           ),
@@ -266,7 +269,7 @@ class PhotoHero extends StatelessWidget {
               photo.isNotEmpty ? photo : 'assets/android.png',
               height: size,
               width: size,
-              fit: BoxFit.cover,
+              fit: BoxFit.fitHeight,
             ),
           ),
         ),
