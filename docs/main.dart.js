@@ -48186,7 +48186,7 @@ F:function(a,b){var s,r,q,p=this,o=null,n=t.t,m=T.jg(C.by,H.d([C.vM,new M.kb(0.7
 k=T.Bh(P.X(k,!0,k.$ti.j("j.E")),C.bA,C.hy,C.cV)
 s=p.f?C.iN:C.lt
 p.a.toString
-r=p.nk("Arigatou!")
+r=p.nk("Gracias!!")
 r=T.Bh(P.X(r,!0,r.$ti.j("j.E")),C.bA,C.hy,C.cV)
 q=p.nk("Questions?")
 s=T.fq(T.a0y(H.d([k,L.a0D(new U.oE(r,T.Bh(P.X(q,!0,q.$ti.j("j.E")),C.bA,C.hy,C.cV),s,C.h_,o),C.B0)],n),C.bA,C.hy),o,o)

@@ -37,9 +37,9 @@
             "id": "andres-bello",
             "name": "Andrés Bello",
             "fullname": "Andrés de Jesús María y José Bello López",
-            "profession": "Político",
+            "profession": "Humanista, poeta, legislador, filósofo y Político",
             "url": "assets/venezuelans/andres-bello.jpg",
-            "description": "Profesor del libertador"
+            "description": "Profesor del libertador. Fundador de la Universidad de Chile"
         },
         {
             "id": "amigos-invisibles",
@@ -85,10 +85,10 @@
             "id": "lugares",
             "name": "Lugares a visitar",
             "fullname": "Lugares a visitar si te atreves a ir a Venezuela",
-            "profession": "",
+            "profession": "Salto ángel, Los Roques, ",
             "url": "assets/venezuelans/lugares.jpg",
             "description": "",
-            "videos": ["https://www.youtube.com/watch?v=aGv_MitUe7A"]
+            "videos": ["https://www.youtube.com/watch?v=aGv_MitUe7A", "https://www.youtube.com/watch?v=siu0EWhVzgU", "https://www.youtube.com/watch?v=9TpGYm5sZrA"]
         },
         {
             "id": "caracas",
@@ -97,7 +97,16 @@
             "profession": "Caracas es Caracas y lo demás es monte y culebra",
             "url": "assets/venezuelans/caracas.jpg",
             "description": "",
-            "videos": ["https://www.youtube.com/watch?v=2Bt0W-3xVlg"]
+            "videos": ["https://www.youtube.com/watch?v=2Bt0W-3xVlg", "https://www.youtube.com/watch?v=PcM1svqRY4Y"]
+        },
+        {
+            "id": "carlos-gonzalez",
+            "name": "Carlos Eduardo González",
+            "fullname": "Carlos Eduardo González Alvarez",
+            "profession": "Data Sourcing tech lead @Leal",
+            "url": "assets/venezuelans/carlos-gonzalez.jpg",
+            "description": "Un poco de mí",
+            "videos": []
         }
     ]
 }
