@@ -90,10 +90,10 @@ class __FlutterProjectsState extends State<_FlutterProjects>
   }
 
   Future<List<Venezuelan>> loadVenezuelans() async {
-    final commit = '27f4fd4dd42679c13b5276625d813de7d3d2208c';
-    final path =
-        'https://raw.githubusercontent.com/cargonzalv/flutterzuela/$commit/assets/venezuelans.json';
-    // final path = 'assets/venezuelans.json';
+    // final commit = '27f4fd4dd42679c13b5276625d813de7d3d2208c';
+    // final path =
+    // 'https://raw.githubusercontent.com/cargonzalv/flutterzuela/$commit/assets/venezuelans.json';
+    final path = 'assets/venezuelans.json';
     final response = await loadAsset(path);
     final List<Venezuelan> venezuelans = [];
     final promises = response['data'].map(

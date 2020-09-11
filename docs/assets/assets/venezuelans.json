@@ -96,7 +96,7 @@
             "profession": "Caracas es Caracas y lo demás es monte y culebra",
             "url": "assets/venezuelans/caracas.jpg",
             "description": "",
-            "videos": "https://raw.githubusercontent.com/cargonzalv/flutterzuela/master/assets/vista.mp4"
+            "videos": ["https://raw.githubusercontent.com/cargonzalv/flutterzuela/master/assets/vista.mp4"]
         }
     ]
 }

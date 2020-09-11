@@ -47943,7 +47943,7 @@ s.aW()},
 lW:function(){var s=0,r=P.am(t.fF),q,p=this,o,n,m,l
 var $async$lW=P.ah(function(a,b){if(a===1)return P.aj(b,r)
 while(true)switch(s){case 0:s=3
-return P.au(B.HP("https://raw.githubusercontent.com/cargonzalv/flutterzuela/27f4fd4dd42679c13b5276625d813de7d3d2208c/assets/venezuelans.json"),$async$lW)
+return P.au(B.HP("assets/venezuelans.json"),$async$lW)
 case 3:n=b
 m=H.d([],t.Fy)
 o=J.aH(J.a9V(J.b5(n,"data"),new V.Zr(p)))
