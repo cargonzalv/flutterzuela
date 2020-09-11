@@ -74,14 +74,6 @@
             "description": "Comidas típicas que debes comer sin dudas si estás de visita por Venezuela"
         },
         {
-            "id": "dulces",
-            "name": "Dulces o 'Chucherías' Venezolanas",
-            "fullname": "Chucherías venezolanas",
-            "profession": "",
-            "url": "assets/venezuelans/comidas.jpg",
-            "description": "Comidas típicas que debes comer sin dudas si estás de visita por Venezuela"
-        },
-        {
             "id": "lugares",
             "name": "Lugares a visitar",
             "fullname": "Lugares a visitar si te atreves a ir a Venezuela",
