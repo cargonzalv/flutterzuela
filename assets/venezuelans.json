@@ -14,16 +14,24 @@
             "fullname": "Hugo Rafael Chavez Frías",
             "profession": "Político",
             "url": "assets/venezuelans/hugo-chavez.jpg",
-            "description": "El mamaguevo mayor",
+            "description": "El mamaguevo original",
             "videos": ["https://www.youtube.com/watch?v=QVRCAx6PGso", "https://www.youtube.com/watch?v=pkzSG1nGDAM", "https://www.youtube.com/watch?v=grC6nXHm2iE"]
         },
         {
             "id": "nicolas-maduro",
             "name": "Nicolás Maduro",
             "fullname": "Nicolás Maduro Moros",
-            "profession": "Político",
+            "profession": "Político, diplomático, dirigente sindical, autobusero",
             "url": "assets/venezuelans/nicolas-maduro.jpg",
-            "description": "Presidente actual"
+            "description": "Presidente 'electo' del período presidencial 2019 - 2025"
+        },
+        {
+            "id": "diosdado-cabello",
+            "name": "Diosdado Cabello",
+            "fullname": "Diosdado Cabello Rondón",
+            "profession": "Militar retirado y político venezolano",
+            "url": "assets/venezuelans/diosdado-cabello.jpg",
+            "description": "Presidente de la Asamblea Nacional Constituyente. El mamaguevo mayor"
         },
         {
             "id": "andres-bello",
@@ -56,7 +64,39 @@
             "profession": "Venezuelan pop duo",
             "url": "assets/venezuelans/chino-y-nacho.jpg",
             "description": "Dúo venezolano de pop latino, merengue y reguetón."
+        },
+        {
+            "id": "comidas",
+            "name": "Comidas típicas de Venezuela",
+            "fullname": "Comidas típicas de Venezuela",
+            "profession": "",
+            "url": "assets/venezuelans/comidas.jpg",
+            "description": "Comidas típicas que debes comer sin dudas si estás de visita por Venezuela"
+        },
+        {
+            "id": "dulces",
+            "name": "Dulces o 'Chucherías' Venezolanas",
+            "fullname": "Chucherías venezolanas",
+            "profession": "",
+            "url": "assets/venezuelans/comidas.jpg",
+            "description": "Comidas típicas que debes comer sin dudas si estás de visita por Venezuela"
+        },
+        {
+            "id": "lugares",
+            "name": "Lugares a visitar",
+            "fullname": "Lugares a visitar si te atreves a ir a Venezuela",
+            "profession": "",
+            "url": "assets/venezuelans/lugares.jpg",
+            "description": ""
+        },
+        {
+            "id": "caracas",
+            "name": "Caracas, la alta alcurnia",
+            "fullname": "Caracas, la alta alcurnia",
+            "profession": "Caracas es Caracas y lo demás es monte y culebra",
+            "url": "assets/venezuelans/caracas.jpg",
+            "description": "",
+            "videos": "https://raw.githubusercontent.com/cargonzalv/flutterzuela/master/assets/vista.mp4",
         }
-        
     ]
 }
