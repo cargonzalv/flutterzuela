@@ -47,7 +47,7 @@ class VenezuelaState extends State<Venezuela> {
           children: [
             // const TitlePage(),
             const BigIntro(),
-            const ThatsAll(thanks: 'Arigatou!')
+            const ThatsAll(thanks: 'Gracias!!')
           ],
         ),
       ),
