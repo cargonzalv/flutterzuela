@@ -87,7 +87,8 @@
             "fullname": "Lugares a visitar si te atreves a ir a Venezuela",
             "profession": "",
             "url": "assets/venezuelans/lugares.jpg",
-            "description": ""
+            "description": "",
+            "videos": ["https://www.youtube.com/watch?v=aGv_MitUe7A"]
         },
         {
             "id": "caracas",
@@ -96,7 +97,7 @@
             "profession": "Caracas es Caracas y lo demás es monte y culebra",
             "url": "assets/venezuelans/caracas.jpg",
             "description": "",
-            "videos": ["https://raw.githubusercontent.com/cargonzalv/flutterzuela/master/assets/vista.mp4"]
+            "videos": ["https://www.youtube.com/watch?v=2Bt0W-3xVlg"]
         }
     ]
 }
