@@ -48,12 +48,12 @@ class TitlePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: const [
                     Text(
-                      'Tomek Polański',
+                      'CharliE González',
                       style: TextStyle(color: Colors.black),
                     ),
                     Text(
-                      'GROUPON',
-                      style: TextStyle(color: Colors.green),
+                      'Leal',
+                      style: TextStyle(color: Color(0xfffdd430)),
                     ),
                   ],
                 ),

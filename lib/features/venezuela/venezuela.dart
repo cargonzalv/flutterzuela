@@ -49,9 +49,8 @@ class VenezuelaState extends State<Venezuela> {
           controller: controller,
           presentationController: presentationController,
           children: [
+            // const TitlePage(),
             const BigIntro(),
-            const TitlePage(),
-            const PopularityPage(),
             PlatformsPage(presentationController),
             const SectionPage('The Cross-Platform Story'),
             const CustomerPage(),

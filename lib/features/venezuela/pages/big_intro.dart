@@ -1,8 +1,14 @@
-import 'dart:io';
+import 'dart:convert';
 import 'dart:math' as math;
+import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
 import 'package:flutterzuela/features/convincing_for_flutter/shared/groupon_theme.dart';
+import 'package:flutterzuela/features/venezuela/pages/detalle.dart';
+import 'package:flutterzuela/shared/utils.dart';
+import 'package:flutterzuela/shared/venezuelan.dart';
 import 'package:presentation/presentation.dart';
 
 class BigIntro extends StatelessWidget {
@@ -61,13 +67,14 @@ class _FlutterProjects extends StatefulWidget {
   __FlutterProjectsState createState() => __FlutterProjectsState();
 }
 
-const minSize = 10.0;
-const maxSize = 290.0;
+const minSize = 30.0;
+const maxSize = 300.0;
 
 class __FlutterProjectsState extends State<_FlutterProjects>
     with SingleTickerProviderStateMixin {
   AnimationController _controller;
   List<_Circle> _circles;
+  List<Venezuelan> _venezuelans;
 
   @override
   void initState() {
@@ -75,8 +82,30 @@ class __FlutterProjectsState extends State<_FlutterProjects>
       vsync: this,
       duration: const Duration(seconds: 5),
     );
-    _circles = _createCircles(math.Random()).toList();
+    loadVenezuelans().then((response) {
+      setState(() {
+        _venezuelans = response;
+        _circles = _createCircles(math.Random()).toList();
+      });
+    });
     super.initState();
+  }
+
+  Future<List<Venezuelan>> loadVenezuelans() async {
+    final response = await loadAsset('assets/venezuelans.json');
+    final List<Venezuelan> venezuelans = [];
+    final promises = response['data'].map(
+      (v) async {
+        final venezuelan = Venezuelan.fromJson(v);
+        venezuelan.media = await venezuelan.getMedia(context);
+        return venezuelan;
+      },
+    );
+    for (final Future<Venezuelan> promise in promises) {
+      final veneco = await promise;
+      venezuelans.add(veneco);
+    }
+    return venezuelans;
   }
 
   @override
@@ -93,40 +122,36 @@ class __FlutterProjectsState extends State<_FlutterProjects>
     }
   }
 
+  static const comandantes = [
+    'assets/venezuelans/hugo-chavez.jpg',
+    'assets/venezuelans/nicolas-maduro.jpg',
+    'assets/venezuelans/diosdado-cabello.jpg',
+  ];
+
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          _circles = _createCircles(math.Random()).toList();
-        });
-      },
-      child: LayoutBuilder(
-        builder: (context, c) {
-          return Stack(
-            fit: StackFit.expand,
-            children: _circles
-                .map((i) => Positioned(
-                      left: c.maxWidth * i.x,
-                      top: c.maxHeight * i.y,
-                      child: LoopTransition(
-                        seed: math.Random().nextDouble(),
-                        scale: _controller,
-                        radius: 400 / i.size,
-                        child: _Bubble(
-                          size: i.size,
-                          color: Color.lerp(
-                            Colors.lightBlueAccent,
-                            GTheme.flutter3,
-                            i.size / maxSize,
+    return LayoutBuilder(
+      builder: (context, c) {
+        return Stack(
+          fit: StackFit.expand,
+          children: _circles
+                  ?.map((i) => Positioned(
+                        left: c.maxWidth * i.x,
+                        top: c.maxHeight * i.y,
+                        child: LoopTransition(
+                          seed: math.Random().nextDouble(),
+                          scale: _controller,
+                          radius: 400 / i.size,
+                          child: _Bubble(
+                            size: i.size,
+                            url: _venezuelans[_circles.indexOf(i)].url,
                           ),
                         ),
-                      ),
-                    ))
-                .toList(),
-          );
-        },
-      ),
+                      ))
+                  ?.toList() ??
+              [],
+        );
+      },
     );
   }
 
@@ -139,23 +164,27 @@ class __FlutterProjectsState extends State<_FlutterProjects>
   }
 
   Iterable<_Circle> _createCircles(math.Random random) sync* {
-    for (int i = 0; i < 2; i++) {
-      yield _createLargeCircle(random);
-    }
-    for (int i = 0; i < 10; i++) {
-      yield _createMediumCircle(random);
-    }
-    for (int i = 0; i < 200; i++) {
-      yield _createSmallCircle(random);
+    for (int i = 0; i < _venezuelans.length; i++) {
+      final venezuelan = _venezuelans[i];
+      if (comandantes.contains(venezuelan.url)) {
+        yield _createLargeCircle(random);
+      } else {
+        final r = Random().nextDouble();
+        if (r > 0.7) {
+          yield _createMediumCircle(random);
+        } else {
+          yield _createSmallCircle(random);
+        }
+      }
     }
   }
 
   _Circle _createSmallCircle(math.Random random) {
-    return _generateCircle(random, min: minSize, max: 50);
+    return _generateCircle(random, min: minSize, max: 75);
   }
 
   _Circle _createMediumCircle(math.Random random) {
-    return _generateCircle(random, min: 50, max: 120);
+    return _generateCircle(random, min: 100, max: 150);
   }
 
   _Circle _createLargeCircle(math.Random random) {
@@ -180,22 +209,69 @@ class _Bubble extends StatelessWidget {
     Key key,
     this.size = 30,
     this.color = Colors.orange,
+    this.url = '',
   }) : super(key: key);
 
   final double size;
   final Color color;
+  final String url;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: size,
-      width: size,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: const AssetImage('assets/appium.png'),
-          fit: BoxFit.cover,
+    return PhotoHero(
+      photo: url,
+      size: size,
+      tag: '$url-$size',
+      onTap: () {
+        Navigator.of(context).push(
+          PageRouteBuilder<Detalle>(
+            transitionDuration: const Duration(seconds: 1),
+            opaque: false,
+            barrierDismissible: true,
+            pageBuilder: (BuildContext context, _, __) {
+              return Detalle(
+                onTap: () {
+                  Navigator.of(context).pop();
+                },
+                photo: url,
+                size: 50,
+                tag: '$url-$size',
+              );
+            },
+          ),
+        );
+      },
+    );
+  }
+}
+
+class PhotoHero extends StatelessWidget {
+  const PhotoHero({Key key, this.photo, this.onTap, this.size, this.tag})
+      : super(key: key);
+
+  final String photo;
+  final VoidCallback onTap;
+  final double size;
+  final String tag;
+
+  @override
+  Widget build(BuildContext context) {
+    return Hero(
+      tag: tag,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(50 * size),
+        child: MouseRegion(
+          cursor: SystemMouseCursors.click,
+          child: GestureDetector(
+            onTap: onTap,
+            child: Image.asset(
+              photo.isNotEmpty ? photo : 'assets/android.png',
+              height: size,
+              width: size,
+              fit: BoxFit.cover,
+            ),
+          ),
         ),
-        borderRadius: BorderRadius.circular(size),
       ),
     );
   }

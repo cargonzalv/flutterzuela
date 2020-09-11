@@ -1,3 +1,6 @@
+import 'dart:convert';
+
+import 'package:flutter/services.dart';
 import 'package:meta/meta.dart';
 
 Iterable<T> join<T>({
@@ -12,4 +15,8 @@ Iterable<T> join<T>({
       yield iterator.current;
     }
   }
+}
+
+Future<Map<String, dynamic>> loadAsset(String path) async {
+  return jsonDecode((await rootBundle.loadString(path)).toString());
 }
