@@ -3,298 +3,34 @@
         {
             "id": "simon-bolivar",
             "name": "Simón Bolívar",
+            "fullname": "Simón Jose Antonio de la Santísima Trinidad Bolívar Palacios Ponte y Blanco",
             "profession": "Político",
             "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
+            "description": "El Libertador",
         },
         {
             "id": "hugo-chavez",
             "name": "Hugo Chávez",
+            "fullname": "Hugo Rafael Chavez Frías",
             "profession": "Político",
             "url": "assets/venezuelans/hugo-chavez.jpg",
-            "description": "Libertador",
-            "nickname": "El Mamaguevo mayor"
+            "description": "El mamaguevo mayor",
         },
         {
             "id": "nicolas-maduro",
             "name": "Nicolás Maduro",
+            "fullname": "Nicolás Maduro Moros",
             "profession": "Político",
             "url": "assets/venezuelans/nicolas-maduro.jpg",
             "description": "Presidente actual",
-            "nickname": "El Mamaguevo"
         },
         {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
+            "id": "andres-bello",
+            "name": "Andrés Bello",
+            "fullname": "Andrés de Jesús María y José Bello López",
             "profession": "Político",
             "url": "assets/venezuelans/andres-bello.jpg",
             "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-                {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-                {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-                {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-                {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
-        },
-        {
-            "id": "simon-bolivar",
-            "name": "Simón Bolívar",
-            "profession": "Político",
-            "url": "assets/venezuelans/simon-bolivar.jpg",
-            "description": "Libertador",
-            "nickname": "El Libertador"
         }
     ]
 }
