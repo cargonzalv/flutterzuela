@@ -15,6 +15,7 @@
             "profession": "Político",
             "url": "assets/venezuelans/hugo-chavez.jpg",
             "description": "El mamaguevo mayor",
+            "videos": ["https://www.youtube.com/watch?v=pkzSG1nGDAM", "https://www.youtube.com/watch?v=grC6nXHm2iE"]
         },
         {
             "id": "nicolas-maduro",
