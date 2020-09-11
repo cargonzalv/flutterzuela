@@ -16,6 +16,7 @@
 
   <title>flutter_presentations</title>
   <link rel="manifest" href="manifest.json">
+  <script src="//cdn.jsdelivr.net/afterglow/latest/afterglow.min.js"></script>
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
@@ -24,10 +25,13 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=4225599066');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=4262258665');
       });
     }
   </script>
-  <script src="main.dart.js?v=4225599066" type="application/javascript"></script>
+  <script src="main.dart.js?v=4262258665" type="application/javascript"></script>
+  <a id="triggerVideoPlayer" class="afterglow" href="#videoPlayer"></a>
+    <video id="videoPlayer" width="960" height="540" data-skin="dark">
+    </video>
 </body>
 </html>
