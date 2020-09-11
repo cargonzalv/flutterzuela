@@ -23,7 +23,7 @@
             "fullname": "Nicolás Maduro Moros",
             "profession": "Político",
             "url": "assets/venezuelans/nicolas-maduro.jpg",
-            "description": "Presidente actual",
+            "description": "Presidente actual"
         },
         {
             "id": "andres-bello",
@@ -31,7 +31,7 @@
             "fullname": "Andrés de Jesús María y José Bello López",
             "profession": "Político",
             "url": "assets/venezuelans/andres-bello.jpg",
-            "description": "Libertador",
+            "description": "Libertador"
         }
     ]
 }
