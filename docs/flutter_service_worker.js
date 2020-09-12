@@ -3,14 +3,14 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "index.html": "fb4ae15bf1f2bc158917d3dc990078d1",
-"/": "fb4ae15bf1f2bc158917d3dc990078d1",
+  "index.html": "2c4af238074865d72d5595da966413f3",
+"/": "2c4af238074865d72d5595da966413f3",
 "main.dart.js": "5296d34b54a5f189c986067e995958fd",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "manifest.json": "4084ac0d09a118ea3e2feaed64933051",
-"assets/AssetManifest.json": "d6c51157bcd5ccb150269635e375de9a",
+"assets/AssetManifest.json": "acd111d562e462c41d566b90ac4d2760",
 "assets/NOTICES": "6c29ce9e7e8160c521742669f6379c60",
 "assets/FontManifest.json": "e3b7042e5da2ac12e36a8345ad96d29d",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
@@ -121,6 +121,7 @@ const RESOURCES = {
 "assets/assets/venezuelans/comidas-2.jpg": "be113a4f7c5ccfde8dd2d8c7a22a0194",
 "assets/assets/venezuelans/francisco-de-miranda.jpg": "dd3221f11193fa8719ef6721228ff86e",
 "assets/assets/venezuelans/lugares-4.jpg": "662a6a7615b3dfac982286cef23582b5",
+"assets/assets/venezuelans/comidas-002.jpg": "754dbea9c2b49fe232dfce4f971121b7",
 "assets/assets/venezuelans/johan-santana.jpg": "d966ce8a93c9bfdbc497c7d608028742",
 "assets/assets/venezuelans/comidas-20.jpg": "4ca03be734159aa47df6c9eabb6639af",
 "assets/assets/venezuelans/lugares-5.jpg": "17363e90d80ada213cc0e4dc2f59bfde",
